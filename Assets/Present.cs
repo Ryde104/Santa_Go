@@ -9,7 +9,8 @@ public class Present : MonoBehaviour {
     void Start ()
     {
         m_rb = GetComponent<Rigidbody2D>();
-        Vector2 v = new Vector2(Random.Range(-300, -150), Random.Range(150, 400));
+        //Vector2 v = new Vector2(Random.Range(-300, -150), Random.Range(150, 400));
+        Vector2 v = new Vector2(-200, 300);
         m_rb.AddForce(v);
     }
 
