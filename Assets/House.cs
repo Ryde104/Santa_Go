@@ -30,6 +30,8 @@ public class House : MonoBehaviour {
             GameObject go = GameObject.Find("santa-sleigh");
             Sleigh s = go.GetComponent<Sleigh>();
             s.m_nScore++;
+            Vector2 vPresent = col.gameObject.transform.position;
+            //Instantiate(GameObject.Find("PS").GetComponent<Rigidbody2D>(), vPresent, UnityEngine.Quaternion.identity);
 
             Destroy(col.gameObject);
         }
